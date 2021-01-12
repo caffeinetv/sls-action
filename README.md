@@ -14,7 +14,7 @@ Github action for serverless framework
 ## Example usage
 
 ```yaml
-uses: dragonraid/sls-action@v2.0.0
+uses: caffeinetv/sls-action@v2.0.0
 with:
   args: '--stage prod deploy'
 ```
@@ -27,7 +27,7 @@ name: deploy lambda functions
 on:
   push:
     branches:
-      - master
+      - main
 
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
